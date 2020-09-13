@@ -5,9 +5,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: purple;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-text-area {
+  display: block;
+  margin: 15px 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 5%;
+}
+
+.question {
+  padding: 15px;
+}
+
+.question-container {
+  color: #303030;
+  font-size: large;
+  background-color: lavender;
+  width: fit-content;
 }
