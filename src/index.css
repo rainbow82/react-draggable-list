@@ -23,11 +23,18 @@ code {
   font-weight: bold;
   color: white;
   background-color: #9081e0;
-  padding: 0 2px
+  padding: 2px;
 }
 
 .c-QuestionInput-form-label {
   display: block;
+}
+
+.c-QuestionInput-submit {
+  color: white;
+  background-color: #303030;
+  padding: 10px 20px;
+  border-radius: 4px;
 }
 
 .c-QuestionInput-form-text-area {
@@ -37,15 +44,15 @@ code {
   padding: 5px;
 }
 
-
-
-.question {
-  padding: 15px;
-}
-
-.c-QuesitionList-container {
+.c-QuestionList-container {
   color: #303030;
   font-size: large;
   width: fit-content;
-  /* grid-column-start: 3; */
+  padding-bottom: 25px;
 }
+
+.c-QuestionList-question {
+  color: purple;
+  font-weight: bold;
+}
+

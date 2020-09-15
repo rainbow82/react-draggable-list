@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Question from './Question'
+import QuestionList from './QuestionList'
 
 const QuestionInput = () => {
 
@@ -7,10 +7,14 @@ const QuestionInput = () => {
   const [itemName, setItemName] = useState("");
 
   const addItem = () => {
-    // event.preventDefault();
-    setItems([...items, itemName]);
-    setItemName("");
-    console.log(items);
+    if (!itemName) {
+      alert('You must enter a question');
+    } else {
+      // event.preventDefault();
+      setItems([...items, itemName]);
+      setItemName("");
+      console.log(items);
+    }
   };
 
   return(
@@ -31,10 +35,10 @@ const QuestionInput = () => {
             />
           </label>
         </form>
-        <button onClick={ addItem }>Submit</button>
+        <button onClick={ addItem } className='c-QuestionInput-submit'>Submit</button>
       </div>
     <div>
-      <Question items={ items }/>
+      <QuestionList items={ items }/>
     </div>
     </div>
   )

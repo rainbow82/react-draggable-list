@@ -8,7 +8,7 @@ const initialDragAndDropState = {
   updatedOrder: []
 }
 
-const Question = ({ items }) => {
+const QuestionList = ({ items }) => {
 
   const [dragAndDrop, setDragAndDrop] = useState( initialDragAndDropState );
   const [list, setList] = useState( items );
@@ -97,13 +97,13 @@ const Question = ({ items }) => {
 
   return(
   <div className="c-QuestionList">
-    <h2>Questions: </h2>
+    <h2>Questions Entered: </h2>
     <div className='c-QuestionList-container'>
       {items.length === 0 ? (
         <h4>No Questions Found</h4>
       ) : (
         list.map((item, index) => (
-        <p
+        <p className='c-QuestionList-question'
         key={index}
         draggable="true"
         onDragStart={onDragStart}
@@ -115,9 +115,11 @@ const Question = ({ items }) => {
         ))
       )}
     </div>
+    <p>The items stored in state will update as they are reordered above</p>
+    <div className='c-QuestionList-array'>{items.length !== 0 ? `"${list}",`: "There are no questions currently stored in state. Please enter a question"}</div>
   </div>
   )
 
 }
 
-export default Question;
+export default QuestionList;
