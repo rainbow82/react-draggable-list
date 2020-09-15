@@ -20,8 +20,9 @@ const QuestionInput = () => {
   return(
     <div className='c-QuestionInput c-QuestionInput-grid-container'>
       <div>
+        <h1>Question List Generator</h1>
         <p>Enter your questions into the box below.</p>
-        <p>Hit <span className='c-QuestionInput-instruction-text'> Enter</span> or <span className='c-QuestionInput-instruction-text'> Click the Submit </span> button to save your question.</p>
+        <p>Hit <span className='c-QuestionInput-instruction-text'> Enter</span> or <span className='c-QuestionInput-instruction-text'> Click the Submit</span> button to save your question.</p>
         <form onSubmit={ (event) => {
           event.preventDefault();
           addItem();

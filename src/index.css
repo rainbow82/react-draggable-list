@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: purple;
+  color: #9081e0;
 }
 
 code {
@@ -32,27 +32,54 @@ code {
 
 .c-QuestionInput-submit {
   color: white;
-  background-color: #303030;
+  background-color: grey;
   padding: 10px 20px;
   border-radius: 4px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.c-QuestionInput-submit:hover {
+  background-color: dimgray;
+  padding: 15px 25px;
 }
 
 .c-QuestionInput-form-text-area {
   display: block;
-  margin: 15px 0;
-  width: 300px;
-  padding: 5px;
+  margin: 25px 0;
+  width: 400px;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.c-QuestionInput-form-text-area:focus {
+  border: 5px solid #3ae49d;
+}
+
+.c-QuestionList {
+  padding-top: 10%;
 }
 
 .c-QuestionList-container {
   color: #303030;
   font-size: large;
-  width: fit-content;
-  padding-bottom: 25px;
+  padding: 5px 5px 25px 5px;
+  border: 2px solid lightgray;
 }
 
 .c-QuestionList-question {
   color: purple;
+  font-weight: bold;
+  border: 2px solid #303030;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px grey;
+  width: 90%;
+  margin-left: 15px;
+}
+
+.c-QuestionList-state {
   font-weight: bold;
 }
 
