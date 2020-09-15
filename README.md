@@ -1,3 +1,15 @@
+This project uses the HTML Drag and Drop API for drag and drop functionality.
+If I was to switch this to a library, it would most likely be React DnD https://react-dnd.github.io/react-dnd/about
+
+Users can enter questions into the list.
+Questions are submitted by hitting enter or clicking save
+Questions are saved into state and displayed below the text input box
+Questions can be re-ordered
+State is displayed to verify that state is updated as each question is dragged around.
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
