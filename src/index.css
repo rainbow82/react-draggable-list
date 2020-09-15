@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #9081e0;
+  color: #3e3c3c;
 }
 
 code {
@@ -13,21 +13,30 @@ code {
     monospace;
 }
 
+.c-App-container{
+  margin: 10%;
+  background-color: #67b9b9;
+}
+
+.c-QuestionInput{
+  padding-top: 15px;
+}
+
+.c-QuestionInput-title {
+  color: #3e3c3c;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
 .c-QuestionInput-grid-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  margin: 5%;
-}
-
-.c-QuestionInput-instruction-text {
-  font-weight: bold;
-  color: white;
-  background-color: #9081e0;
-  padding: 2px;
-}
-
-.c-QuestionInput-form-label {
-  display: block;
+  margin: 15px;
+  padding: 5%;
+  background-color: #f3e0c9;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px grey;
 }
 
 .c-QuestionInput-submit {
@@ -47,8 +56,8 @@ code {
 
 .c-QuestionInput-form-text-area {
   display: block;
-  margin: 25px 0;
-  width: 400px;
+  margin-bottom: 25px;
+  width: 100%;
   border-radius: 5px;
   height: 40px;
 }
@@ -59,6 +68,14 @@ code {
 
 .c-QuestionList {
   padding-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 15px;
+  padding: 5%;
+  background-color: #e6e8ef;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px grey;
 }
 
 .c-QuestionList-container {
@@ -84,8 +101,13 @@ code {
 }
 
 @media screen and (min-width: 980px) {
-  .c-QuestionInput-grid-container {
-    grid-template-columns: repeat(2, 1fr);
+  .c-QuestionInput-grid-container, .c-QuestionList {
+    margin: 2% 5%;
+  }
+
+  .c-QuestionInput-title {
+    margin-bottom: -50px;
+    margin-left: 55px;
   }
 }
 

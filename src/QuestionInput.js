@@ -18,16 +18,17 @@ const QuestionInput = () => {
   };
 
   return(
-    <div className='c-QuestionInput c-QuestionInput-grid-container'>
-      <div>
-        <h1>Question List Generator</h1>
-        <p>Enter your questions into the box below.</p>
-        <p>Hit <span className='c-QuestionInput-instruction-text'> Enter</span> or <span className='c-QuestionInput-instruction-text'> Click the Submit</span> button to save your question.</p>
+    <div className='c-QuestionInput'>
+      <h1 className='c-QuestionInput-title'>Question List Generator</h1>
+      <div className='c-QuestionInput-grid-container'>
+        {/* <p>Enter your questions into the box below.</p>
+        <p>Hit <span className='c-QuestionInput-instruction-text'> Enter</span> or <span className='c-QuestionInput-instruction-text'> Click the Submit</span> button to save your question.</p> */}
         <form onSubmit={ (event) => {
           event.preventDefault();
           addItem();
         }}>
           <label htmlFor='itemName' className='c-QuestionInput-form-label'>
+            Type your question
             <input className='c-QuestionInput-form-text-area'
               question='item'
               type='text'

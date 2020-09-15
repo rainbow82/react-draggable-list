@@ -5,7 +5,7 @@ import QuestionInput from './QuestionInput';
 
 function App() {
   return (
-    <div className='grid-container'>
+    <div className='c-App-container'>
       <QuestionInput/>
     </div>
 
